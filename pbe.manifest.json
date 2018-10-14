@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "path": {
+    "./index": "HyperMD_PowerPack.mermaid"
+  },
+  "external": {
+    "mermaid": "mermaid",
+    "mermaid/**/*.css": false
+  },
+  "import": {
+    "hypermd": "./node_modules/hypermd/pbe.manifest.json"
+  }
+}

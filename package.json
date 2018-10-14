@@ -1,0 +1,35 @@
+{
+  "name": "hypermd-mermaid",
+  "description": "Use mermaid to render 'mermaid' code blocks",
+  "keywords": [
+    "hypermd",
+    "powerpack",
+    "mermaid"
+  ],
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "laobubu",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HyperMD/hypermd-mermaid.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "prepare": "npm run build",
+    "watch": "tsc -w --module amd",
+    "dev": "hmd-run npm:watch \"hmd-hs -o /example/?_hmd_dev_\"",
+    "build": "tsc && hmd-transpile -o . index.js"
+  },
+  "devDependencies": {
+    "@hypermd/build-tools": "https://github.com/HyperMD/build-tools.git",
+    "codemirror": "^5.40.2",
+    "hypermd": "^0.4.0",
+    "typescript": "^3.1.3"
+  },
+  "peerDependencies": {
+    "hypermd": "^0.4.0"
+  },
+  "dependencies": {
+    "mermaid": "^8.0.0-rc.8"
+  }
+}

@@ -1,0 +1,15 @@
+node_modules/
+tmp/
+.DS_Store
+cache/
+.vscode/
+
+*.js
+*.js.map
+!example/**/*.js
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
