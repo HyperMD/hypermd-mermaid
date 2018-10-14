@@ -37,4 +37,7 @@ require([
 
   var your_textarea = document.getElementById('input-box')
   var editor = HyperMD.fromTextArea(your_textarea)
+
+  // default height is 300px
+  editor.setSize(null, '100%')
 })

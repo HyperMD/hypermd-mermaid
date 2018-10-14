@@ -6,12 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>hypermd-mermaid</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html,
+    body,
+    .CodeMirror {
+      position: absolute !important;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0;
+    }
+  </style>
 </head>
 
 <body>
   <textarea id="input-box" cols="30" rows="10"># hypermd-mermaid
 
 [GitHub](https://github.com/HyperMD/hypermd-mermaid) | [![NPM version](https://img.shields.io/npm/v/hypermd-mermaid.svg?style=flat-square)](https://npmjs.org/package/hypermd-mermaid)
+
+**NOTE**: With RequireJS, you MUST load `mermaid.min.js` before `require.js`.
 
 ```mermaid
 graph TD;
